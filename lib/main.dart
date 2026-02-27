@@ -14,24 +14,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          body: Column(
+          body: Row(
             children: [
-              Center(
+              Expanded(
                 child: Text(
                   "Deliver features faster",
-                  style: TextStyle(backgroundColor: Colors.amber, fontSize: 30),
+                  textAlign: TextAlign.center,
                 ),
               ),
-              Center(
-                child: Text(
-                  "Craft beautiful UIs",
-                  style: TextStyle(
-                    backgroundColor: const Color.fromARGB(255, 230, 126, 94),
-                    fontSize: 30,
-                  ),
-                ),
+              Expanded(
+                child: Text("Craft beautiful UIs", textAlign: TextAlign.center),
               ),
-              Expanded(child: Icon(Icons.flutter_dash, size: 200)),
+              Expanded(child: Icon(Icons.flutter_dash)),
             ],
           ),
         ),
