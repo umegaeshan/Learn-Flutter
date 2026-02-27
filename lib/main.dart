@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -12,27 +12,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Center(
-            child: const Text(
-              "Easy Flutter App",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w900,
-                fontSize: 20,
-              ),
-            ),
-          ),
-          backgroundColor: Colors.orange,
-          leading: const Icon(Icons.menu, size: 30),
-          actions: const [
+          title: Center(child: Text("My Simple App ")),
+          leading: Icon(Icons.menu, size: 30),
+          actions: [
             Icon(Icons.search, size: 30),
             Icon(Icons.shopping_bag, size: 30),
           ],
+          backgroundColor: Colors.blue,
         ),
-        body: const Center(
+        body: Center(
           child: Text(
-            "Hello Friends . My Name Is Flutter",
-            style: TextStyle(color: Colors.red),
+            "Hello , Welcome To My Simple Flutter App",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight(300)),
           ),
         ),
       ),
