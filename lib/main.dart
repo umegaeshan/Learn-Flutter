@@ -12,20 +12,46 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+
       home: SafeArea(
         child: Scaffold(
-          body: Row(
+          appBar: AppBar(backgroundColor: Colors.purple),
+          body: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
             children: [
-              Expanded(
-                child: Text(
-                  "Deliver features faster",
-                  textAlign: TextAlign.center,
+              Container(
+                margin: EdgeInsets.all(10),
+                width: 300,
+                height: 150,
+                color: Colors.lightBlueAccent,
+              ),
+              Container(
+                margin: EdgeInsets.all(10),
+                width: 300,
+                height: 150,
+                color: Colors.lightBlueAccent,
+              ),
+              Container(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.all(20),
+                      color: Colors.amber,
+                      width: 120,
+                      height: 300,
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(20),
+                      color: Colors.amber,
+                      width: 120,
+                      height: 300,
+                    ),
+                  ],
                 ),
               ),
-              Expanded(
-                child: Text("Craft beautiful UIs", textAlign: TextAlign.center),
-              ),
-              Expanded(child: Icon(Icons.flutter_dash)),
             ],
           ),
         ),
