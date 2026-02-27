@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,20 +11,28 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Flutter Container",
+      debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          body: Container(
-            width: 60,
-            height: 60,
-            margin: EdgeInsets.fromLTRB(100, 150, 200, 250),
-            padding: EdgeInsets.all(5),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.amber,
-              border: Border.all(color: Colors.black, width: 2),
-            ),
-            child: Center(child: Text("Flutter")),
+          body: Column(
+            children: [
+              Center(
+                child: Text(
+                  "Deliver features faster",
+                  style: TextStyle(backgroundColor: Colors.amber, fontSize: 30),
+                ),
+              ),
+              Center(
+                child: Text(
+                  "Craft beautiful UIs",
+                  style: TextStyle(
+                    backgroundColor: const Color.fromARGB(255, 230, 126, 94),
+                    fontSize: 30,
+                  ),
+                ),
+              ),
+              Expanded(child: Icon(Icons.flutter_dash, size: 200)),
+            ],
           ),
         ),
       ),
