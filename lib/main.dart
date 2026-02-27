@@ -10,20 +10,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Center(child: Text("My Simple App ")),
-          leading: Icon(Icons.menu, size: 30),
-          actions: [
-            Icon(Icons.search, size: 30),
-            Icon(Icons.shopping_bag, size: 30),
-          ],
-          backgroundColor: Colors.blue,
-        ),
-        body: Center(
-          child: Text(
-            "Hello , Welcome To My Simple Flutter App",
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight(300)),
+      title: "Flutter Container",
+      home: SafeArea(
+        child: Scaffold(
+          body: Container(
+            width: 60,
+            height: 60,
+            margin: EdgeInsets.fromLTRB(100, 150, 200, 250),
+            padding: EdgeInsets.all(5),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.amber,
+              border: Border.all(color: Colors.black, width: 2),
+            ),
+            child: Center(child: Text("Flutter")),
           ),
         ),
       ),
