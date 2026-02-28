@@ -14,165 +14,176 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(backgroundColor: Colors.amber),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              // 1st row
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Container(
-                    //1st row 1 squre
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.greenAccent,
-                    ),
+        appBar: AppBar(backgroundColor: Colors.purple),
 
-                    width: 150,
-                    height: 120,
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsetsGeometry.all(20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: const Color.fromARGB(255, 144, 245, 148),
                   ),
-                  Container(
-                    //1st row 2 rectangle
-                    child: Column(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.greenAccent,
+                  width: double.infinity,
+                  height: 350,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        child: Text(
+                          "Flutter is a open sources",
+                          style: TextStyle(
+                            fontWeight: FontWeight(900),
+                            fontSize: 20,
                           ),
-                          width: 150,
-                          height: 50,
                         ),
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.amber,
-                          ),
-                          width: 150,
-                          height: 50,
+                      ), //for title
+                      SizedBox(height: 20),
+                      Container(
+                        child: Text(
+                          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
+                      ),
+                      SizedBox(height: 20), //for para
 
-            Container(
-              //2nd row 1 rectangle
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Colors.purple,
-              ),
-              width: 330,
-              height: 100,
-            ),
+                      Container(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              width: 120,
+                              height: 120,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                color: const Color.fromARGB(255, 238, 141, 255),
+                              ),
+                            ),
 
-            Container(
-              //3nd row 1 rectangle
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Colors.greenAccent,
-              ),
-              width: 330,
-              height: 100,
-            ),
+                            Container(
+                              width: 120,
+                              height: 120,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                color: const Color.fromARGB(255, 238, 143, 255),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ), // for 2 squre
+                    ],
+                  ),
+                ),
+                SizedBox(height: 40),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.amber,
+                  ),
+                  width: double.infinity,
+                  height: 600,
+                  child: Column(
+                    children: [
+                      Container(
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              child: Text(
+                                "Flutter is an open sources",
+                                style: TextStyle(
+                                  fontWeight: FontWeight(900),
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                            Container(child: Icon(Icons.shopping_bag)),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 50),
+                      Container(
+                        child: Text(
+                          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        ),
+                      ),
+                      SizedBox(height: 50),
 
-            Container(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.amber,
-                    ),
-                    width: 150,
-                    height: 240,
-                  ),
-                  Container(
-                    child: Column(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.blue,
-                          ),
-                          width: 150,
-                          height: 75,
+                      Container(
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.blue,
                         ),
-                        Container(
-                          margin: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.deepOrangeAccent,
-                          ),
-                          width: 150,
-                          height: 50,
-                        ),
-                        Container(
-                          margin: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.blue,
-                          ),
-                          width: 150,
-                          height: 75,
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
+                        width: 260,
+                        height: 300,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              child: Text(
+                                "Flutter is an open sources",
+                                style: TextStyle(
+                                  fontWeight: FontWeight(900),
+                                  fontSize: 17,
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 10),
 
-            Container(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.purple,
-                    ),
-                    width: 50,
-                    height: 50,
+                            Container(
+                              child: Text(
+                                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                              ),
+                            ),
+                            SizedBox(height: 10),
+
+                            Container(
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(30),
+                                      color: Colors.white,
+                                    ),
+                                    width: 50,
+                                    height: 50,
+                                  ),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(30),
+                                      color: Colors.white,
+                                    ),
+                                    width: 50,
+                                    height: 50,
+                                  ),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(30),
+                                      color: Colors.white,
+                                    ),
+                                    width: 50,
+                                    height: 50,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.amber,
-                    ),
-                    width: 50,
-                    height: 50,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.greenAccent,
-                    ),
-                    width: 50,
-                    height: 50,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.deepOrangeAccent,
-                    ),
-                    width: 50,
-                    height: 50,
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );
