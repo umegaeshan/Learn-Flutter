@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,36 +19,107 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(backgroundColor: Colors.purple),
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                margin: EdgeInsets.all(10),
-                width: 300,
-                height: 150,
-                color: Colors.lightBlueAccent,
+                margin: EdgeInsets.all(15),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.greenAccent,
+                      ),
+                      width: 125,
+                      height: 125,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.greenAccent,
+                      ),
+                      width: 125,
+                      height: 125,
+                    ),
+                  ],
+                ),
               ),
               Container(
-                margin: EdgeInsets.all(10),
-                width: 300,
-                height: 150,
-                color: Colors.lightBlueAccent,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.greenAccent,
+                ),
+                width: 305,
+                height: 125,
               ),
+
               Container(
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Container(
-                      margin: EdgeInsets.all(20),
-                      color: Colors.amber,
-                      width: 120,
-                      height: 300,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.all(7.5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.amber,
+                            ),
+                            height: 150,
+                            width: 125.25,
+                          ),
+                          Container(
+                            margin: EdgeInsets.all(7.5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.amber,
+                            ),
+                            height: 150,
+                            width: 125.25,
+                          ),
+                        ],
+                      ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(20),
-                      color: Colors.amber,
-                      width: 120,
-                      height: 300,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.all(7.5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.blue,
+                            ),
+                            height: 100,
+                            width: 125.25,
+                          ),
+                          Container(
+                            margin: EdgeInsets.all(7.5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.blue,
+                            ),
+                            height: 75,
+                            width: 125.25,
+                          ),
+                          Container(
+                            margin: EdgeInsets.all(7.5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.blue,
+                            ),
+                            height: 100,
+                            width: 125.25,
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
