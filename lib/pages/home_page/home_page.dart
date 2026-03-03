@@ -120,6 +120,46 @@ class HomePage extends StatelessWidget {
                 ),
               ),
 
+              Container(
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ItemCard(
+                      itemName: "Washing Liquide",
+                      itemVolume: "200ml",
+                      itemPrice: "250 /=",
+                    ),
+
+                    ItemCard(
+                      itemName: "Coffe and Tea",
+                      itemVolume: "100g",
+                      itemPrice: "30 /=",
+                    ),
+                  ],
+                ),
+              ),
+
+              Container(
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ItemCard(
+                      itemName: "Washing Liquide",
+                      itemVolume: "200ml",
+                      itemPrice: "250 /=",
+                    ),
+
+                    ItemCard(
+                      itemName: "Coffe and Tea",
+                      itemVolume: "100g",
+                      itemPrice: "30 /=",
+                    ),
+                  ],
+                ),
+              ),
+
               //item card
             ],
           ),
