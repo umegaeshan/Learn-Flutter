@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:my/pages/category/widgets/alert_bar.dart';
+import 'package:my/pages/category/widgets/selected_item.dart';
 import 'package:my/widgets/reuseable/category_types.dart';
 
 class CategoryPage extends StatelessWidget {
@@ -102,10 +103,12 @@ class CategoryPage extends StatelessWidget {
             Container(
               padding: EdgeInsets.fromLTRB(15, 5, 5, 5),
               child: Text(
-                "Select Item",
+                "Selected Items",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight(700)),
               ),
             ),
+
+            SelectedItem(),
           ],
         ),
       ),
