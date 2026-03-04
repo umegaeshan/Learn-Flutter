@@ -63,7 +63,11 @@ class PriceList extends StatelessWidget {
             ),
           ),
 
-          GradiantButton(),
+          GradiantButton(
+            buttonText: 'Process To Play',
+            buttonWidth: 300,
+            buttonHeight: 50,
+          ),
         ],
       ),
     );
